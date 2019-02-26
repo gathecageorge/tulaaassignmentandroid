@@ -1,0 +1,7 @@
+first_name,last_name,date_of_birth,postal_address,national_id,gender
+John,Appleseed,1990-10-10,"13, Kiambu",232323,Male
+George,Gatheca,1990-12-12,"14, Kihara",28602757,Male
+,,1990-12-12,,28602758,Male
+George,Njoroge,1990-12-12,uu,28602759,Male
+John,Appleseed,1990-10-10,"13, Kiambu",232324,Male
+John, Appleseed, 1990-10-10, "13, Kiambu", 232325, Male
