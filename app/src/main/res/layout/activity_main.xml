@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="20dp"
+    android:descendantFocusability="beforeDescendants"
+    android:focusableInTouchMode="true"
+    android:fitsSystemWindows="true"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/txtMessage"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="No file Selected" />
+
+    <Button
+        android:id="@+id/btnSelect"
+        android:layout_marginTop="20dp"
+        android:onClick="selectCSV"
+        android:layout_below="@id/txtMessage"
+        android:text="Choose CSV to Upload"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/lblUrl"
+        android:layout_marginTop="20dp"
+        android:layout_below="@id/btnSelect"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Type Server Url Here if Different" />
+
+    <EditText
+        android:id="@+id/txtUrl"
+        android:layout_below="@id/lblUrl"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="http://192.168.1.106:8080/csv" />
+
+    <Button
+        android:id="@+id/btnUpload"
+        android:layout_marginTop="20dp"
+        android:onClick="uploadCSV"
+        android:layout_below="@id/txtUrl"
+        android:text="Upload CSV"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <ScrollView
+        android:layout_below="@id/btnUpload"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/txtResponse"
+            android:gravity="top"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Response will be shown here" />
+    </ScrollView>
+
+</RelativeLayout>

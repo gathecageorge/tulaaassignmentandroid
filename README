@@ -1,0 +1,19 @@
+1. Clone this repository:
+https://github.com/gathecageorge/tulaaassignmentandroid.git
+
+2. This is an android studio project: Open with android studio and compile to create APK.
+Otherwise you can use the APK here to install in any phone.
+
+3. Copy the sample CSV file to any folder on the phone. It will be used to test uploading.
+
+4. Run the app. When launched, There is a button to choose CSV. click on it to open file chooser.
+Choose the sample CSV from respective folder.
+
+5. In the Url textbox, type the url of the backend service that consumes the CSV file and stores it
+inside the database.
+Note: The phone and server backend needs to be on same network on the backend service be in the
+internet.
+In this case I use same network so the url is http://192.168.1.106:8080/csv using IP address
+of the machine running backend at spring's default port 8080.
+
+6. Click upload CSV, you will get response below the upload button.
